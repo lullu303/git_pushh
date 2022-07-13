@@ -12,9 +12,6 @@ public class grade {
 		System.out.println("점수를 입력하세요=> ");
 		float num =sc.nextFloat();
 		
-		
-	
-		
 		if(grade==4 && num>=70) {
 			System.out.println("합격, 점수: "+num);
 			
