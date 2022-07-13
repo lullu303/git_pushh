@@ -4,6 +4,7 @@ public class month {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
+		
 		System.out.println("월을 입력하세요:  ");
 		int month=sc.nextInt();
 		
