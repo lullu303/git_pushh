@@ -3,6 +3,7 @@ package day09;
 public interface MyInter {
 
 	void demo();//추상메서드. public abstract가 자동으로 붙는다.
+	
 }/////////////////
 
 interface YourInter{
