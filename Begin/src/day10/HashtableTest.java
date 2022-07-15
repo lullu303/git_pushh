@@ -45,6 +45,11 @@ public class HashtableTest {
 			System.out.println(val);
 		}
 		
+		//containsKey(Object key) : key값을 포함하고 있으면 true, 없으면 false
+		//containsValue(Object value) : value값을 가지고 있으면 true, false
+		System.out.println(h1.containsKey("생년"));
+		System.out.println(h1.containsKey(2022));
+		
 		
 		
 		
