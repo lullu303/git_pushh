@@ -1,6 +1,6 @@
 package day10;
 
-import java.util.Enumeration;
+import java.util.*;
 import java.util.Vector;
 
 //java.util.List 계열 => list []
@@ -49,6 +49,28 @@ public class VectorTest2 {
 			Student e=en.nextElement();
 			System.out.println(e.getName()+": "+e.getId());
 		}
+		System.out.println("******************");
+		while(en.hasMoreElements()) {
+			Student e=en.nextElement();
+			System.out.println(e.getName()+": "+e.getId());
+		}
+		
+		Iterator <Student> it=v.iterator();
+		
+		while(it.hasNext()) {
+			Student i=it.next();
+			System.out.println(i.getName()+": "+i.getId());
+		}
+		//clear(), removeAll() : 모든 요소를 삭제한다
+		v.clear();
+		System.out.println("모두 삭제 후--------------------");
+		it=v.iterator();
+		for(;it.hasNext();) {
+			Student i=it.next();
+			System.out.println(i.getName());
+		}
+		
+		
 		
 		
 	}
