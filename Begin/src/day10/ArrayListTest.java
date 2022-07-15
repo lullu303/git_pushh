@@ -6,6 +6,10 @@ public class ArrayListTest {
  * -단 벡터는 멀티 스레드가 동작하는 환경일 때 동기화가 구현되어 있어
  * 		조금이라도 먼저 저장한 객체가 순차적으로 저장되는 반면,
  * 	ArrayList는 동기화가 구현되어 있지 않음.
+ * 
+ * LinkedList : List계열
+ * 	ArrayList는 순차적 데이터 저장할 때 적합. 중간에 삽입 또느 삭제 ==> 적합하지 않음.
+ * 
  * */
 	public static void main(String[] args) {
 		ArrayList<String> arrList=new ArrayList<>();
@@ -34,8 +38,9 @@ public class ArrayListTest {
 			System.out.println(arrList2.get(i));
 		}
 		
-		//Collections.sort() 메서드를 이용해서 정렬 =>오름차순
-		Collections.sort(arrList2);
+		//Collections.sort() 메서드를 이용해서 정렬 
+		//Collections.sort(arrList2);=>오름차순
+		Collections.sort(arrList2, Collections.reverseOrder()); //=>내림차순 정렬
 		System.out.println("---정렬 이후--------------");
 		for(Integer val: arrList2) {
 			System.out.println(val);
