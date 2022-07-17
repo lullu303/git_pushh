@@ -19,7 +19,7 @@ public class MyFlowLayout extends JFrame {
 		p.setBackground(Color.white);
 		//p.setLayout(new BorderLayout());
 		//p.setLayout(new GridLayout(2,2));//2행2열
-		p.setLayout(new FlowLayout(FlowLayout.RIGHT));
+		
 		
 		b1=new JButton("    b1    ");
 		b2=new JButton("    b2    ");
