@@ -1,4 +1,7 @@
 package day10;
+
+import java.beans.BeanProperty;
+
 //도메인 객체 -VO(Value Object), DTO(Data Transfer Object) =>값을 가지고 있는 객체
 public class Student {
 	
@@ -30,6 +33,19 @@ public class Student {
 	public void setName(String name) {
 		this.name = name;
 	}
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Student) {
+			Student user = (Student)obj;
+			boolean bool = user.name.equals(this.name)&& user.id == this.id;
+			return bool;
+			
+		}
+		else {
+			return false;
+		}
+	}
+
 	
 	
 	
