@@ -6,6 +6,8 @@ package day11;
 public class Local {
 	String str="멤버변수@@@";
 	
+	
+	
 	public void sub() {
 		double pi=3.14;//지역변수(local var)
 		System.out.println("str: "+str);
