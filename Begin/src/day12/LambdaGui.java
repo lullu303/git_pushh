@@ -19,6 +19,11 @@ public class LambdaGui extends JFrame {
 		
 		lb=new JLabel(new ImageIcon("myicon.jpg"));
 		lb.setText("Welcome to MyApp");
+		lb.setHorizontalAlignment(JLabel.CENTER);
+		lb.setVerticalTextPosition(JLabel.TOP);
+		lb.setFont(new Font("sans_serif", Font.BOLD,24));
+							//서체		 //스타일		//크기
+		
 		
 		p.add(pN,"North");
 		p.add(lb,"Center");
@@ -27,6 +32,18 @@ public class LambdaGui extends JFrame {
 		bt2=new JButton("Pink");
 		pN.add(bt1);
 		pN.add(bt2);
+		
+		//[1] bt1 클릭시 1b의 글자색을 파랑으로 =>Anonymous class
+		bt1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				lb.setForeground(Color.blue);
+					}
+		});
+				
+		//[2] bt2 핑크색 =>Lambda식 이용해서 이벤트 처리하기
+		bt2.addActionListener(e->{;lb.setForeground(Color.pink);});
+		
+		
 		
 		this.setSize(500,500);
 		this.setVisible(true);
