@@ -74,6 +74,9 @@ public class PongApp extends JFrame{
 				}catch(NotSupportedNameException ex) {
 					String msg=ex.getMessage();
 					setTitle(msg);
+					//메시지 박스 띄우기
+					JOptionPane.showMessageDialog(p, msg);
+					
 				}finally {
 					tfName.setText("");
 					tfName.requestFocus();//입력 포커스 추가
