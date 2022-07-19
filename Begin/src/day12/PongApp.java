@@ -37,6 +37,7 @@ public class PongApp extends JFrame{
 		MyEventHandler handler=new MyEventHandler();
 		btAdd.addActionListener(handler);
 		btSave.addActionListener(handler);
+		tfName.addActionListener(handler);//입력후 엔터치면 ActionEvent발생함
 		
 		setSize(500,700);
 		setVisible(true);
@@ -47,7 +48,7 @@ public class PongApp extends JFrame{
 		
 		public void actionPerformed(ActionEvent e) {
 			Object obj=e.getSource();
-			if(obj==btAdd) {
+			if(obj==btAdd || obj==tfName) {
 				//setTitle("add");
 				//1) tfName에 입력한 값을 얻어오기
 				//public String getText()
