@@ -14,7 +14,7 @@ public class MySearchEngine extends JFrame {
 		add(p, "Center");
 		
 		//p.setLayout(new BorderLayout());
-		
+		p.setLayout(new GridLayout(2,2));
 		
 		na=new JButton("NAVER");
 		da=new JButton("DAUM");
