@@ -2,7 +2,14 @@ package day12;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-
+/**
+ * 퐁씨 성을 가진 사람들이 이용할 수 있는 애플리케이션
+ * 작성자: 홍길동
+ * 작성일: 22-07-19
+ * 버전: 1.1
+ * 
+ * 클래스 앞, 메소드 앞에 붙이기
+ */
 
 public class PongApp extends JFrame{
 
@@ -43,7 +50,7 @@ public class PongApp extends JFrame{
 		setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE );
 	}//---------------------------------------
-	
+	/**버튼에 대한 이벤트를 처리하는 클래스*/
 	class MyEventHandler implements ActionListener{
 		
 		public void actionPerformed(ActionEvent e) {
