@@ -1,11 +1,14 @@
 package day13;
 /* FileReader
+ * InputStreamReader
  * - 2byte(문자) 기반 스트림
- * - 노드 스트림(파일과 노드 연결)
+ * - 브릿지 스트림
+ * - 1byte로 읽어들인 데이터를 2byte로 조합해서 읽어들인다.
+ * - charset을 맞추는 기능이 있다.
  * 
  * */
 import java.io.*;
-public class FileReaderTest {
+public class FileReaderTest2 {
 
 	public static void main(String[] args)
 	throws IOException
