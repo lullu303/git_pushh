@@ -6,18 +6,20 @@ import java.io.*;
  * -이미지, 멀티미디어, 바이너리 파일 등을 읽을 때 사용한다.
  * 
  * byte배열에 담아서 읽고 쓰세요
+ * [실습]myicon.jpg파일을 카피해서 c://myjava/copy.PNG로 내보내기
  * */
 public class FileInputStreamTest2 {
 
 	public static void main(String[] args) throws IOException
 	{
 		
-		String fileName="src/day13/InputStreamTest.java";
-		String fileName2="c:/myjava/InputStreamTest_Copy.txt";
+		//String fileName="src/day13/InputStreamTest.java";
+		//String fileName2="c:/myjava/InputStreamTest_Copy.txt";
+		String fileName="myicon.jpg";
+		String fileName2="c:/myjava/copy.jpg";
 		//파일과 노드 연결
 		FileInputStream fis=new FileInputStream(fileName);
 		FileOutputStream fos=new FileOutputStream(fileName2);
-		
 		
 		int n=0;
 		int cnt=0, total=0;
