@@ -10,8 +10,10 @@ public class InputStreamTest2 {
 		int n=0;
 		int cnt=0;
 		System.out.println("입력하세요=>");
+		//데이터를 달걀판(배열)을 1개씩 이동
 		while((n=System.in.read())!= -1) {//Ctrl+C or Ctrl+D을 입력하면 -1을 반환
-			System.out.println("n: "+((char)n));
+			//System.out.println("n: "+((char)n));
+			System.out.write(n); //Stream이용할 때는 write가 더 효율적임.
 			cnt++;
 		}
 		System.out.println(cnt+"bytes 읽음");
