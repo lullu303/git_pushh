@@ -8,13 +8,13 @@ package day13;
  * 
  * */
 import java.io.*;
-public class InputStreamReaderTest {
+public class InputStreamReaderTest2 {
 
 	public static void main(String[] args)
 	throws IOException
 	{
-		String fname="C:\\Users\\lullu\\git\\git_pushh\\Begin\\src\\day13//FileInputStreamTest.java";
-		//String fname="C:/myjava/readme.txt";
+		//String fname="C:\\Users\\lullu\\git\\git_pushh\\Begin\\src\\day13//FileInputStreamTest.java";
+		String fname="C:/myjava/readme.txt";//ANSI로 저장 ==> CP949==>EUC-KR
 		
 		
 		File file=new File(fname);
@@ -23,7 +23,7 @@ public class InputStreamReaderTest {
 		
 		//FileReader fr=new FileReader(file);//노드 연결
 		FileInputStream fis=new FileInputStream(file);//1byte기반 노드 연결
-		InputStreamReader fr=new InputStreamReader(fis, "UTF-8");
+		InputStreamReader fr=new InputStreamReader(fis, "EUC-KR");
 		
 		OutputStreamWriter ow=new OutputStreamWriter(System.out, "UTF-8");
 		

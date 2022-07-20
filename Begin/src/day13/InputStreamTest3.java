@@ -7,6 +7,7 @@ public class InputStreamTest3 {
 	public static void main(String[] args)  
 	throws IOException
 	{
+		
 		int n=0;
 		int cnt=0;
 		System.out.println("입력하세요=>");
