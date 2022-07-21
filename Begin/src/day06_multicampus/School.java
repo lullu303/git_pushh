@@ -8,7 +8,7 @@ public class School {
 	
 	public static void showMenu() {
 		System.out.println("**** SchoolApp v1.1*******");
-		System.out.println("** 1. 등            록             **");
+		System.out.println("** 1. 회  원    가   입             **");
 		System.out.println("** 2. 출            력             **");
 		System.out.println("** 3. 검            색             **");
 		System.out.println("** 4. 삭            제             **");
