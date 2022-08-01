@@ -5,7 +5,7 @@ public class Human { //묵시적으로 extends Object하고 있음.
 	int height;
 	
 	public Human() {
-		this("준영팝", 182);
+		this("준영", 182);
 	}
 	public Human(String n, int h) {
 		name=n;
