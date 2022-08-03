@@ -35,6 +35,8 @@ public class MemoInsert2 {
 		pstmt.setString(2,  msg);
 		
 		int n=pstmt.executeUpdate();
+		System.out.println(n+"개의 레코드를 등록했습니다");
+		pstmt.close();
 		
 		con.close();
 	}
