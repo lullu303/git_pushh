@@ -23,9 +23,15 @@ public class MemoSelect {
 		 * 
 		 * 
 		 * */
-		
-		
-		
+		while(re.next()) {
+			int idx=rs.getInt("idx");
+			String name=rs.getString("name");
+			String content=rs.getString("msg");
+			java.sql.Date wdate=rs.getDate("wdate");
+			System.out.println(idx+"\t"+name+"\t"+content+"\t"+wdate);
+		}
+		rs.close();
+		pstmt.close();
 		con.close();
 	}
 
