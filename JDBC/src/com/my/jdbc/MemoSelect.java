@@ -18,12 +18,14 @@ public class MemoSelect {
 		ResultSet rs=pstmt.executeQuery();
 		//결과 테이블을 rs가 참조한다.
 		//ResultSet의 주요 메서드
-		/* [1] boolean next() : 
+		//커서는 첫번째 행의 직전에 위치함(before First)
+		/* [1] boolean next() : 논리적인 커서의 위치를 다음 레코드로 이동시켜서 레코드가 있으면 true반환하고
+		 * 						없으면 false를 반환함.
 		 * [2]XXX getXXX("컬럼명") 
 		 * 
 		 * 
 		 * */
-		while(re.next()) {
+		while(rs.next()) {
 			int idx=rs.getInt("idx");
 			String name=rs.getString("name");
 			String content=rs.getString("msg");
