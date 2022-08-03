@@ -14,7 +14,19 @@ public class MemoSelect {
 		String sql="SELECT idx, name, msg, wdate FROM memo ORDER BY 1 DESC";
 		PreparedStatement pstmt=con.prepareStatement(sql);
 		//SELECT문일 경우: ResultSet executeQuery() 메서드를 호출
-
+		
+		ResultSet rs=pstmt.executeQuery();
+		//결과 테이블을 rs가 참조한다.
+		//ResultSet의 주요 메서드
+		/* [1] boolean next() : 
+		 * [2]XXX getXXX("컬럼명") 
+		 * 
+		 * 
+		 * */
+		
+		
+		
+		con.close();
 	}
 
 }
