@@ -12,6 +12,8 @@ public class MemoSelect {
 
 		Connection con=DriverManager.getConnection(url, user, pwd);
 		String sql="SELECT idx, name, msg, wdate FROM memo ORDER BY 1 DESC";
+		PreparedStatement pstmt=con.prepareStatement(sql);
+		//SELECT문일 경우: ResultSet executeQuery() 메서드를 호출
 
 	}
 
